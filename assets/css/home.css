@@ -1,0 +1,42 @@
+#home{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position: fixed;
+    margin-top: 70px;
+}
+
+#home #logo{
+    width: 50%;
+    margin: auto;
+}
+
+#home #logo img{
+    width: 180px;
+}
+
+#home #content{
+    width: 50%;
+    margin: auto;
+    font-size: larger;
+    color: white;
+}
+
+#home #order{
+    border: 2px solid #ffffff;
+    border-radius: 19px;
+    background-color: transparent;
+    width: 7%;
+    padding: 5px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#home #order a{
+    color: white;
+    text-decoration: none;
+}
+
+#home #order:hover{
+    background-color: #00a2ff;
+}
