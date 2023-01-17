@@ -1,4 +1,9 @@
-#home{
+body {
+    background-color: rgb(74, 41, 111);
+    margin: 0;
+}
+
+#home {
     width: 100%;
     margin: auto;
     text-align: center;
@@ -6,23 +11,23 @@
     margin-top: 70px;
 }
 
-#home #logo{
+#home #logo {
     width: 50%;
     margin: auto;
 }
 
-#home #logo img{
+#home #logo img {
     width: 180px;
 }
 
-#home #content{
+#home #content {
     width: 50%;
     margin: auto;
     font-size: larger;
     color: white;
 }
 
-#home #order{
+#home #order {
     border: 2px solid #ffffff;
     border-radius: 19px;
     background-color: transparent;
@@ -32,11 +37,11 @@
     margin-top: 20px;
 }
 
-#home #order a{
+#home #order a {
     color: white;
     text-decoration: none;
 }
 
-#home #order:hover{
+#home #order:hover {
     background-color: #00a2ff;
 }

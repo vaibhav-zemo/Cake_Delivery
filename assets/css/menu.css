@@ -1,0 +1,136 @@
+#menu{
+    margin: 50px 80px;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+#size{
+    margin-top: -30px;
+    margin-bottom: 10px;
+}
+
+.star {
+    position: relative;
+    font-size: 1.5em;
+    font-family: FontAwesome;
+}
+
+.star:before {
+    content: "\f005";
+    /* full */
+    color: #f4c2be;
+}
+
+.full:before {
+    color: var(--red-color);
+}
+
+.half:after {
+    content: "\f089";
+    /* half */
+    position: absolute;
+    left: 0;
+    color: var(--red-color);
+}
+
+.recipe-level {
+    display: inline-block;
+    background: #fef2ec;
+    color: #e38d5f;
+    font-weight: bold;
+    padding: .5rem 1.5rem;
+    border-radius: 10px;
+    margin-bottom: .5rem;
+}
+
+.recipe-preview {
+    width: 120px;
+}
+
+.recipe-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.recipe-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background: white;
+    border-radius: 20px;
+    width: 250px;
+    transition: transform 500ms;
+    color: #332b2a;
+}
+
+.recipe-card:hover {
+    transform: translateY(-25px);
+    box-shadow: 0px 5px 20px 10px #ff000045;
+}
+
+.recipe-card>:is(img, span, strong) {
+    transform: translateY(-40px);
+}
+
+.recipe-card>:is(.rating, .recipe-infos) {
+    transform: translateY(-20px);
+}
+
+.recipe-start {
+    width: 100%;
+    border: none;
+    border-top: solid 1px var(--grey-color) !important;
+    padding: 1rem;
+    background: transparent;
+    transition: all 500ms;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 0 0px 20px 20px;
+
+}
+
+.recipe-start:hover {
+    background: var(--red-color);
+    color: white;
+    cursor: pointer;
+}
+
+.recipe-infos{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.recipe-infos span {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-align: center;
+
+}
+
+.recipe-infos:not(:last-child) {
+    padding-right: 1rem;
+}
+
+.recipe-infos p {
+    font-size: 12px;
+    color: #d0cccc;
+}
+
+:root {
+    --red-color: #db3528;
+    --grey-color: #efefef;
+}
